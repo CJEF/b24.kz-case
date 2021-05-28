@@ -1,0 +1,43 @@
+.intro {
+    padding: 105px 165px;
+    background-image: url('../img/intro-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &__inner {
+        max-width: 970px;
+        margin: 0 auto;
+        padding: 56px 100px 64px;
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.15);
+    }
+    &__title {
+        max-width: 770px;
+        font-family: 'Montserrat-Bold';
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__span {
+        font-family: 'Montserrat-Bold';
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 0;
+    }
+}
+
+.intro-mouse {
+    width: 26px;
+    height: 95px;
+    margin: 40px auto 0;
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

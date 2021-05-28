@@ -1,0 +1,45 @@
+.task {
+    position: relative;
+    background-image: url('../img/task-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 70px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item {
+        width: 50%;
+        &__square {
+            &:nth-child(1) svg{
+                width: 33px;
+                height: 33px;
+            }
+            &:nth-child(2) svg{
+                width: 30px;
+                height: 30px;
+            }
+            &:nth-child(3) svg{
+                width: 35px;
+                height: 35px;
+            }
+            &:nth-child(4) svg{
+                width: 23px;
+                height: 28px;
+            }
+            &:nth-child(5) svg{
+                width: 39px;
+                height: 29px;
+            }
+        }
+        &__text {
+            max-width: 269px;
+        }
+        &--last {
+            width: 100%;
+            .task-item__text {
+                max-width: none;
+            }
+        }
+    }
+}

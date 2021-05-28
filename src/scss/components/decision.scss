@@ -1,0 +1,46 @@
+.decisions {
+    position: relative;
+    counter-reset: decisions;
+    padding: 55px 0 60px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__item {
+        flex-direction: column;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item {
+        &__square {
+            position: relative;
+            &::before {
+                counter-increment: decisions;                 /* Инкрементирует счётчик*/
+                content: counter(decisions);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Montserrat-SemiBold';
+                font-size: 32px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.decisions__item {
+    &:nth-child(4) {
+        width: 48%;
+    }
+    &:nth-child(5) {
+        width: 48%;
+        margin-left: 30px;
+    }
+}
+.decisions__item:nth-child(4) .list-item__top,
+.decisions__item:nth-child(5) .list-item__top,
+.decisions__item:nth-child(6) .list-item__top {
+    align-items: flex-start;
+}

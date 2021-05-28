@@ -1,0 +1,27 @@
+.result {
+    position: relative;
+    background-image: url('../img/result-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 54px 0 86px;
+    &__list .list__item {
+        &:nth-child(1) svg {
+            width: 36px;
+            height: 30px;
+        }
+        &:nth-child(2) svg {
+            width: 32px;
+            height: 32px;
+        }
+        &:nth-child(3) svg {
+            width: 29px;
+            height: 30px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__btn {
+        margin-top: 60px;
+    }
+}
